@@ -136,7 +136,7 @@
     text-align: center;
     margin-bottom: 2.5rem;
   }
-  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.8rem; }
+  .services { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.8rem; }
   .service-card {
     background: var(--card);
     padding: 2rem 1.5rem;
@@ -222,7 +222,7 @@
   .bottom-bar {
     position: fixed; bottom: 0; left: 0; right: 0;
     background: var(--green);
-    display: none;
+    display: flex;
     padding: 0.9rem 1rem 1.2rem;
     gap: 0.8rem;
     z-index: 200;
@@ -250,7 +250,7 @@
     .btns { justify-content: center; }
     .visual { order: -1; min-height: 220px; }
     nav { display: none; }
-    .bottom-bar { display: flex; }
+    .services { grid-template-columns: 1fr; }
     body { padding-bottom: 90px; }
   }
 </style>
